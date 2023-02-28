@@ -8,7 +8,7 @@
 https://ibb.co/s96JVhW
 
 ---
-
+```
 vrrp_instance failover_test {
 state MASTER
 interface enp0s8
@@ -26,9 +26,11 @@ virtual_ipaddress {
 192.168.0.50 dev enp0s8 label enp0s8:vip
 }
 }
+```
 
 ---
 
+```
 vrrp_instance failover_test {
 state BACKUP
 interface enp0s8
@@ -46,6 +48,7 @@ virtual_ipaddress {
 192.168.0.50 dev enp0s8 label enp0s8:vip
 }
 }
+```
 
 
 
