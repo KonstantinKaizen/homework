@@ -34,7 +34,11 @@ Corosync —  позволяет создавать единый кластер 
 
 ### Задание 3
 
-```
+
 https://ibb.co/L0Hr4nf
-```
+
+https://ibb.co/XFWZytJ
+
+https://ibb.co/26bnjpM
+
 
