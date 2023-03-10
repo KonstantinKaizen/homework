@@ -23,6 +23,8 @@
 
 
 ### Задание 3
+/homework-10.4/backup-node1.sh
+/homework-10.4/rsync.conf
 
 
 
