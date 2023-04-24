@@ -60,21 +60,17 @@ category                   |category_id
 city                       |city_id
 country                    |country_id
 customer                   |customer_id
-customer_list              |ID
 film                       |film_id
-film_actor                 |actor_id
-film_category              |category_id
-film_list                  |FID
+film_actor                 |actor_id,film_id
+film_category              |category_id,film_id
 film_text                  |film_id
 inventory                  |inventory_id
 language                   |language_id
-nicer_but_slower_film_list |FID
 payment                    |payment_id
 rental                     |rental_id
 sales_by_film_category     |
 sales_by_store             |
 staff                      |staff_id
-staff_list                 |ID
 store                      |store_id
 ---------------------------|---------
 ```
