@@ -16,7 +16,7 @@ SELECT DISTINCT district FROM address WHERE district LIKE 'K%a' AND district NOT
 
 
 ```
-SELECT * FROM payment WHERE payment_date BETWEEN '2005-05-15' AND '2005-05-18' AND amount>10;
+SELECT * FROM payment WHERE payment_date BETWEEN '2005-06-15 00:00:00' AND '2005-06-18 23:59:59' AND amount>10;
 ```
 
 
@@ -46,7 +46,7 @@ SELECT * FROM payment ORDER BY payment_date DESC LIMIT 5;
 
 
 ```
-SELECT LOWER(first_name),REPLACE(first_name, 'LL', 'PP') FROM customer WHERE first_name LIKE 'Kelly' OR first_name LIKE 'Willie';
+SELECT last_name , LOWER(REPLACE(first_name, 'LL', 'PP')) FROM customer WHERE first_name LIKE 'Kelly' OR first_name LIKE 'Willie';
 ```
 
 
