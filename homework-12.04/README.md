@@ -7,15 +7,13 @@
 количество пользователей, закреплённых в этом магазине.
 
 
-```
-select c.store_id,count(c.customer_id) from customer c  join staff s on  c.store_id = s.store_id  group by c.store_id HAVING count(c.customer_id) > 300;
-```
-
 
 ```
-ОШИБКА
-
-select c.store_id,count(c.customer_id),s.first_name  from customer c  join staff s on  c.store_id = s.store_id  group by c.store_id HAVING count(c.customer_id) > 300;
+select count(c.customer_id),s.first_name,s.last_name,c2.city from customer c 
+	inner join staff s on  c.store_id = s.store_id 
+	inner join address a on a.address_id = s.address_id
+	inner join city c2 on c2.city_id = a.city_id 
+	group by s.staff_id,s.first_name,c2.city HAVING count(c.customer_id) > 300;
 ```
 
 
@@ -41,7 +39,7 @@ SELECT COUNT(length) FROM film WHERE length > (SELECT AVG(length) FROM film);
 
 
 ```
-select COUNT(payment_date),month(payment_date) from payment group by month(payment_date) ORDER by COUNT(payment_date) DESC LIMIT 1;
+select COUNT(payment_date),date_format(payment_date , '%b %Y') from payment group by date_format(payment_date , '%b %Y') ORDER by COUNT(payment_date) DESC LIMIT 1;
 ```
 
 
