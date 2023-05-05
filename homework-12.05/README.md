@@ -21,9 +21,10 @@ where date(p.payment_date) = '2005-07-30' and p.payment_date = r.rental_date and
 ```
 ---
 
-```
+
  ![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-12.05/1.png)
-```
+
+
 
 
 
