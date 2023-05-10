@@ -14,10 +14,23 @@ select SUM(table_name),SUM(data_length),SUM(index_length),SUM(index_length)/SUM(
 
 Выполните explain analyze следующего запроса:
 
+
+перечислите узкие места;
+
+-таблица film присоединена некорректно, "многое ко многим"
+
+оптимизируйте запрос: внесите корректировки по использованию операторов, при необходимости добавьте индексы.
+
 ```
-select distinct concat(c.last_name, ' ', c.first_name), sum(p.amount) over (partition by c.customer_id, f.title)
-from payment p, rental r, customer c, inventory i, film f
-where date(p.payment_date) = '2005-07-30' and p.payment_date = r.rental_date and r.customer_id = c.customer_id and i.inventory_id = r.inventory_id
+create index best_index on payment(payment_date);
+
+explain analyze select concat(c.last_name, ' ', c.first_name), sum(p.amount) from payment p
+	inner join rental r on p.payment_date = r.rental_date
+	inner join customer c on r.customer_id = c.customer_id
+	inner join inventory i on i.inventory_id = r.inventory_id
+where p.payment_date >= '2005-07-30' and p.payment_date < DATE_ADD('2005-07-30', INTERVAL 1 DAY)
+group by concat(c.last_name, ' ', c.first_name); 
+
 ```
 ---
 
