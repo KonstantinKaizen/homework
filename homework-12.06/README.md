@@ -13,7 +13,7 @@ master-master - позволяет копировать данные с любо
 ### Задание 2
 
 
-![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-12.02/с1.png)
+![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-12.06/с1.png)
 
 
 
