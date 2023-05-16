@@ -12,8 +12,13 @@ master-master - позволяет копировать данные с любо
 
 ### Задание 2
 
-
-![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-12.06/с1.png)
+HOST 1
+![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-12.06/host 1 status.png)
+![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-12.06/host-2 mysql.png)
+---
+HOST 2
+![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-12.06/host 3 status.png)
+![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-12.06/host-4 mysql.png)
 
 
 
