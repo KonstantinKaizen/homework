@@ -32,13 +32,13 @@
 
 Вертикальный шардинг, выделяем по одному серверу на каждую таблицу.
 
-![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-12.07/1.png)
+![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-12.07/2.png)
 
 
 
 Горизонтальный шартинг, таблицу user_id разделим на два сервера выделив данные которые будут хранится на разных серверах, таблицу id_book также разделим уже по name, выделив часть данных (a-j) на один сервер, а на другой с name (k-z), таблицу magazine оставим без изменений.
 
-![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-12.07/2.png)
+![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-12.07/1.png)
 
 
 
