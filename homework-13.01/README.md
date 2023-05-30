@@ -13,6 +13,15 @@ https://www.exploit-db.com/exploits/23077
 https://www.exploit-db.com/exploits/18368
 https://www.exploit-db.com/exploits/48038
 
+### Задание 2
+
+![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-13.01/2.png)
+![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-13.01/1.png)
+![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-13.01/4.png)
+![alt text](https://github.com/KonstantinKaizen/homework/blob/main/homework-13.01/3.png)
+
+---
+
 
 
 
